@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//Category/migrations/0001_initial.py=utf-8
+encoding//Category/models.py=utf-8
+encoding//Company/models.py=utf-8
+encoding//Company/serializers.py=utf-8
+encoding//Company/views.py=utf-8

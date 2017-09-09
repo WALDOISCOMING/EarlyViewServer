@@ -1,0 +1,5 @@
+1.파이썬 3.5이상 버전
+2.django 1.8버전
+3.power shell 통하여 superuser 생성.
+3.rest api 설치
+pip install Pillow 이미지필드.
