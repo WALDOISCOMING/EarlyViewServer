@@ -1,14 +1,15 @@
 from django.conf.urls import include, url,patterns
 from django.contrib import admin
-
-#rest api ¿¡¼­ »ç¿ëµÇ´Â router ÀÌ°ÍÀ» ÅëÇÏ¿© data¸¦ post getÇÑ´Ù.
+'''
+'''
+#rest api ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ç´ï¿½ router ï¿½Ì°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ dataï¿½ï¿½ post getï¿½Ñ´ï¿½.
 from rest_framework import routers
 
-#rest api¸¦ ÅëÇÏ¿© °¡Á®¿Ã °Íµé  as¸¦ »ç¿ëÇØ¾ßÁö ¿©·¯ class¿¡¼­ °¡Á®¿Ã ¼ö ÀÖ´Ù.
+#rest apiï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Íµï¿½  asï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ classï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
 from Company import views as companyViews
 from UserTest import views as userViews
 
-#mediaÀÇ »çÁøÀ» °¡ÁÒ¿À´Â °ÍÀ» »ç¿ëÇÏ±â À§ÇÑ °Í.
+#mediaï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ò¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½.
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,9 +28,9 @@ urlpatterns = [
     
     #router urls
     url(r'^', include(router.urls)),
-    #°ü¸®ÀÚ/
+    #ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/
     url(r'^admin/', include(admin.site.urls)),
-    #rest api ·Î±×ÀÎ ·Î±×¾Æ¿ô 
+    #rest api ï¿½Î±ï¿½ï¿½ï¿½ ï¿½Î±×¾Æ¿ï¿½ 
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
   #  url(r'^companytest/',include('Company.urls')),
         

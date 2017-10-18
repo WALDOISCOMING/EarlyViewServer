@@ -18,7 +18,7 @@ import os
 """
 def get_image_path(instance,filename):
     return os.path.join('EarlyView','Company','photo',filename)
-
+a
 """
 
 class Company(models.Model):
