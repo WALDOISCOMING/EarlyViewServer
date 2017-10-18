@@ -4,3 +4,4 @@ encoding//Category/models.py=utf-8
 encoding//Company/models.py=utf-8
 encoding//Company/serializers.py=utf-8
 encoding//Company/views.py=utf-8
+encoding/<project>=UTF-8
