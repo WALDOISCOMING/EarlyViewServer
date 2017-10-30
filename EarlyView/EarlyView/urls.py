@@ -1,7 +1,7 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 '''
-안녕 로봇
+안녕 로봇 안녀엉
 '''
 #rest api ���� ���Ǵ� router �̰��� ���Ͽ� data�� post get�Ѵ�.
 from rest_framework import routers
