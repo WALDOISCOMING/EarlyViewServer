@@ -8,7 +8,7 @@ from rest_framework import routers
 
 #rest api�� ���Ͽ� ������ �͵�  as�� ����ؾ��� ���� class���� ������ �� �ִ�.
 from Company import views as companyViews
-from UserTest import views as userViews
+from User import views as userViews
 
 #media�� ������ ���ҿ��� ���� ����ϱ� ���� ��.
 from django.conf import settings
