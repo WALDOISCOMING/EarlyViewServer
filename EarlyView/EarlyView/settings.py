@@ -25,17 +25,18 @@ SECRET_KEY = '5o!59t71*i_ke3_^z5=!!mw508$9^6tp6)l+9i+^%@giwrct#f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = "*"
 
 
 REST_FRAMEWORK = {
-    
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',  # enables simple command line authentication
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ),
-    'PAGE_SIZE': 10
+    #'PAGE_SIZE': i10
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE':10
 }
 
 
