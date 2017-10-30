@@ -1,6 +1,7 @@
 from django.conf.urls import include, url
 from django.contrib import admin
 '''
+안녕
 '''
 #rest api ���� ���Ǵ� router �̰��� ���Ͽ� data�� post get�Ѵ�.
 from rest_framework import routers
