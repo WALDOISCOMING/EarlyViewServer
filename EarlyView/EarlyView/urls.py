@@ -19,7 +19,10 @@ router = routers.DefaultRouter()
 router.register(r'company', companyViews.CompanyViewSet)
 router.register(r'company/image', companyViews.TaskViewSet)
 router.register(r'users', userViews.UserViewSet)
-router.register(r'groups',userViews.GroupViewSet)
+router.register(r'normalusers', userViews.NormalUserViewSet)
+
+router.register(r'category', userViews.CategoryViewSet)
+#router.register(r'groups',userViews.GroupViewSet)
 
 
 urlpatterns = [
@@ -33,6 +36,9 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     #rest api �α��� �α׾ƿ� 
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    
+    
+    
   #  url(r'^companytest/',include('Company.urls')),
         
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

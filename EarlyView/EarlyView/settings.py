@@ -55,6 +55,7 @@ INSTALLED_APPS = (
     #Category
     'Category',
     'Company',
+    'User'
     
 )
 
@@ -132,5 +133,5 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-#AUTH_USER_MODEL = 'testuser.MyUser'
+#AUTH_USER_MODEL = 'User.NormalUser'
 #LOGIN_REDIRECT_URL = '/foods/board/'
